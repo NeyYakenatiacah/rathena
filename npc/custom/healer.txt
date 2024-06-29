@@ -44,9 +44,19 @@ if ( getbrokenid(1) )
     atcommand "@repairall";
 	
 		specialeffect2 EF_INCAGILITY;
-		sc_start SC_INCREASEAGI,240000,10;
+		sc_start SC_INCREASEAGI,600000,10;
 		specialeffect2 EF_BLESSING;
-		sc_start SC_BLESSING,240000,10;
+		sc_start SC_BLESSING,600000,10;
+		sc_start SC_STRFood,18000000,6;
+        sc_start SC_AGIFood,18000000,6;
+        sc_start SC_VITFood,18000000,6;
+        sc_start SC_INTFood,18000000,6;
+        sc_start SC_DEXFood,18000000,6;
+        sc_start SC_LUKFood,18000000,6;
+		specialeffect2 EF_ASSUMPTIO2;
+		sc_start SC_ASSUMPTIO,240000,5;
+		specialeffect2 EF_IMPOSITIO;
+		sc_start SC_IMPOSITIO,240000,5;
 	}
 	if (vip_status(VIP_STATUS_ACTIVE)){
         sc_start SC_STRFood,18000000,6;
@@ -100,7 +110,7 @@ morocc,153,97,6	duplicate(Healer)	Healer#mor	10209
 moscovia,220,191,4	duplicate(Healer)	Healer#mos	10209
 niflheim,212,182,5	duplicate(Healer)	Healer#nif	10209
 payon,179,106,4	duplicate(Healer)	Healer#pay	10209
-prontera,159,191,6	duplicate(Healer)	Healer#prt	10209
+prontera,159,191,3	duplicate(Healer)	Healer#prt	10209
 rachel,125,116,6	duplicate(Healer)	Healer#rac	10209
 splendide,201,153,4	duplicate(Healer)	Healer#spl	10209
 thor_camp,249,74,4	duplicate(Healer)	Healer#thor	10209
