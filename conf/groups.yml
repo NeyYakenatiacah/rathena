@@ -41,7 +41,7 @@ Header:
   Version: 1
 
 Body:
-  - Id: 0
+  - Id: 5
     # group 0 is the default group for every new account
     Name: Player
     Level: 0
