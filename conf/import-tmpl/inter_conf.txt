@@ -1,5 +1,6 @@
-login_server_db: ragnarok
-ipban_db_db: ragnarok
-char_server_db: ragnarok
-map_server_db: ragnarok
-log_db_db: log
+login_server_db: rathena4444_rag
+ipban_db_db: rathena4444_rag
+char_server_db: rathena4444_rag
+map_server_db: rathena4444_rag
+log_db_db: rathena4444_log
+
