@@ -274,6 +274,10 @@ ayo_dun02	mapflag	nomemo
 beach_dun	mapflag	nomemo
 beach_dun2	mapflag	nomemo
 beach_dun3	mapflag	nomemo
+// Brasilis 
+bra_in01	mapflag	nomemo
+bra_dun01	mapflag	nomemo
+bra_dun02	mapflag	nomemo
 // Clock Tower
 c_tower1	mapflag	nomemo
 c_tower2	mapflag	nomemo
