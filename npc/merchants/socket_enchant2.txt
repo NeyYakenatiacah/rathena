@@ -83,10 +83,10 @@
 					next;
 					switch(select("Book of Mother Earth:Book of Billows:Book of Gust of Wind:Book of the Blazing Sun"))
 					{
-						case 1: callfunc "Func_Socket2",1554,1569,40,66,200,1010,10;
-						case 2: callfunc "Func_Socket2",1553,1568,40,66,200,1010,10;
-						case 3: callfunc "Func_Socket2",1556,1571,40,66,200,1010,10;
-						case 4: callfunc "Func_Socket2",1555,1570,40,66,200,1010,10;
+						case 1: callfunc "Func_Socket2",1554,1569,1,66,200,1010,10;
+						case 2: callfunc "Func_Socket2",1553,1568,1,66,200,1010,10;
+						case 3: callfunc "Func_Socket2",1556,1571,1,66,200,1010,10;
+						case 4: callfunc "Func_Socket2",1555,1570,1,66,200,1010,10;
 					}
 				case 2:
 					mes "[Leablem]";
@@ -174,7 +174,7 @@
 					switch(select("Pirate Bandana:Black Leather Boots"))
 					{
 						case 1: callfunc "Func_Socket2",2287,5350,50,61,500,985,1; // 50,61 - it's not a typo
-						case 2: callfunc "Func_Socket2",2425,2434,40,51,500,985,1;
+						case 2: callfunc "Func_Socket2",2425,2434,1,51,500,985,1;
 						//case 3: callfunc "Func_Socket2",15053,15056,x,x,x,x,x;	// Special Ninja Suit (Needs more info)
 					}
 				case 4:
@@ -184,11 +184,11 @@
 					next;
 					switch(select("Mage Coat:Holy Robe:Sacred Mission:Undershirt:Pantie"))
 					{
-						case 1: callfunc "Func_Socket2",2334,2372,40,51,1000,985,1; // Mage Coat has 10% success chance
-						case 2: callfunc "Func_Socket2",2327,2373,45,51,1000,985,1; // the rest has 5%
-						case 3: callfunc "Func_Socket2",2111,2128,45,51,1000,985,1;
-						case 4: callfunc "Func_Socket2",2522,2523,45,51,1000,985,1;
-						case 5: callfunc "Func_Socket2",2339,2371,45,51,1000,985,1;
+						case 1: callfunc "Func_Socket2",2334,2372,1,51,1000,985,1; // Mage Coat has 10% success chance
+						case 2: callfunc "Func_Socket2",2327,2373,1,51,1000,985,1; // the rest has 5%
+						case 3: callfunc "Func_Socket2",2111,2128,1,51,1000,985,1;
+						case 4: callfunc "Func_Socket2",2522,2523,1,51,1000,985,1;
+						case 5: callfunc "Func_Socket2",2339,2371,1,51,1000,985,1;
 					}
 			}
 		case 3:

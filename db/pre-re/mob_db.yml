@@ -42121,9 +42121,9 @@ Body:
       - Item: Fin
         Rate: 250
       - Item: Witherless_Rose
-        Rate: 25
+        Rate: 250
       - Item: Crystal_Mirror
-        Rate: 50
+        Rate: 250
       - Item: Illusion_Flower
         Rate: 5
       - Item: Mage_Coat
