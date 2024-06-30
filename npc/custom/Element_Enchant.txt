@@ -1,0 +1,91 @@
+// eAthena Script / Rathena Script
+// Created: Rosemount
+// Current Version: 1.0
+// Tested : Latest Version Rathena
+// Description: This script allows all characters changed element weapon.Only one element is allowed.More than one element automatically buff reset.
+
+prontera,154,197,3	script	Element Enchant	834,{
+set .price,20000; // Cost Element Enchant
+mes "Hi "+strcharinfo(0);
+next;
+mes "What can i do for you";
+menu "~ Nothing",L_lol,"~ Element Enchant",L_menu;
+
+L_menu:
+switch(select("~ ^990000Earth^000000:~ ^99FF00Wind^000000:~ ^0033FFWater^000000:~ ^FF3300Fire^000000:~ ^333333Ghost^000000:~ ^999999Shadow^000000:~ ^CCCCFFHoly^000000:~ Cancel")) {
+
+case 1:
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 99,1200000,1;
+end;
+
+case 2: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 98,1200000,1;
+end;
+
+case 3: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 97,1200000,1;
+end;
+
+case 4: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 96,1200000,1;
+end;
+
+case 5: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 146,1200000,1;
+end;
+
+case 6: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove;  
+set Zeny, Zeny - .price;
+sc_start 144,1200000,1;
+end;
+
+case 7: 
+if( Zeny < .price ) goto L_NoZeny;
+if ( getstatus ( 37 || 99 || 98 || 97 || 146 || 144)) goto L_remove; 
+set Zeny, Zeny - .price;
+sc_start 37,1200000,1;
+end;
+
+case 8: 
+end;
+
+L_NoZeny:
+next;
+mes "Not Enough Zeny";
+close;
+
+L_lol:
+emotion ET_SWEAT;
+end;
+
+L_remove:
+sc_end 37; 
+sc_end 99;
+sc_end 98;
+sc_end 97;
+sc_end 146;
+sc_end 144;
+sleep2 1000;
+goto L_menu;
+}
+}
+
+
+	
