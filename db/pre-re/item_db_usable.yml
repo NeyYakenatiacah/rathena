@@ -9485,6 +9485,23 @@ Body:
          if (!checkoption(Option_Wug) && !checkoption(Option_Wugrider))
             setfalcon (!checkfalcon());
       }
+    Id: 12887
+    AegisName: Unlimited_Fly_Wing
+    Name: Unlimited Fly Wing
+    Type: Usable
+    Flags:
+      NoConsume: true
+    Trade:
+      NoDrop: false
+      NoTrade: false
+      NoSell: true
+      NoCart: false
+      NoStorage: false
+      NoGuildStorage: false
+      NoMail: false
+      NoAuction: false
+    Script: |
+      itemskill "AL_TELEPORT",1;
   - Id: 12900
     AegisName: Battle_Manual_Box
     Name: Battle Manual Box
